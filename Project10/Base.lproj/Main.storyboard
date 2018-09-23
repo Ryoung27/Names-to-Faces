@@ -23,7 +23,7 @@
                             <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Person" id="LAO-Gy-ZwE">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Person" id="LAO-Gy-ZwE" customClass="PersonCell" customModule="Project10" customModuleProvider="target">
                                 <rect key="frame" x="10" y="10" width="140" height="180"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -34,9 +34,20 @@
                                             <rect key="frame" x="10" y="10" width="120" height="120"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Custom" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZk-VJ-8A2">
+                                            <rect key="frame" x="10" y="134" width="120" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </view>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="imageView" destination="ohb-iW-jCS" id="pNz-kY-sHL"/>
+                                    <outlet property="name" destination="uZk-VJ-8A2" id="0Fz-nO-YIw"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
